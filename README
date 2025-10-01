@@ -1,0 +1,66 @@
+# LucidTerm
+
+**LucidTerm** is a lightweight terminal emulator written in **Rust**, created by **Luzifer Lawliet**.  
+It is designed as an experimental project to explore **pseudo-terminals (PTYs)**, shell interaction, and low-level system I/O.
+
+---
+
+## 🚀 Features
+- Spawn shells inside a custom PTY.
+- Forward local stdin to the PTY and display shell output.
+- Minimal design for learning and experimentation.
+- Easily extensible for advanced terminal features (ANSI parsing, resizing, GUI rendering).
+
+---
+
+## 💡 Why LucidTerm?
+This project is built for developers who want to understand:
+- How terminals work under the hood.
+- PTY systems in Rust.
+- Low-level shell I/O operations.
+
+---
+
+## 🛠 Installation
+
+Make sure you have Rust installed.  
+Clone the repository:
+
+    ```bash
+    git clone https://github.com/AnupamaSAbeyrathna/LucidTerm.git
+    cd LucidTerm
+
+Build and run:
+
+    cargo run
+
+🎯 Usage
+
+Once running, LucidTerm will spawn a shell inside a PTY.
+Type any command you normally run in your terminal:
+
+    ls -l
+    pwd
+    echo "Hello from LucidTerm"
+
+⚙️ Roadmap
+
+Planned improvements:
+
+    ANSI escape code parsing for full terminal emulation.
+
+    Resizing support.
+
+    GUI-based rendering.
+
+    Tabs and session management.
+
+📜 License
+
+    This project is licensed under the MIT License
+
+✨ Credits
+
+    Created by Luzifer Lawliet(Anupama Abeyrathna)
+
+Inspired by low-level system programming and terminal emulation.

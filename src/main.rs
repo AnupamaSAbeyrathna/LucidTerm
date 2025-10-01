@@ -20,7 +20,8 @@ fn main() -> Result<()> {
     let mut reader = pair.master.try_clone_reader()?;
     let mut writer = pair.master.take_writer()?;
 
-    // Reader thread: read from PTY and print to our stdout (later feed to parser)
+    // Reader thread: read from PTY and print to our stdout (later feed to parsgit branch
+er)
     let rhandle = thread::spawn(move || {
         let mut buf = [0u8; 4096];
         loop {
